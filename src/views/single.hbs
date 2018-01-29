@@ -1,0 +1,24 @@
+
+<a href="/vesselcodes" class="btn btn-info" role="button">Back</a>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class=:panel-title>shipname: {{shipname}}</h3>
+	</div>
+	<div class="panel-body">
+		<label for="imo">IMO:  </label>{{imo}}
+		<label for="mmsi">MMSI:  </label>{{mmsi}}
+		<label for="flag">FLAG:  </label>{{flag}}
+		<label for="vtype">VTYPE:  </label>{{vtype}}
+	</div>	
+</div>
+
+
+<form action="/vesselcodes/{{mmsi}}?_method=DELETE" method="post">
+	<a href="/vesselcodes/{{mmsi}}/edit" type="submit" class="btn btn-default btn-warning">Edit Vessel</a>
+
+	<button type="submit" class="btn btn-default btn-danger">Delete Vessel</button>
+
+	<a href="/vesselcodes/{{mmsi}}/ggmap" type="submit" class="btn btn-default btn-success">Google Maps</a>
+</form>
+

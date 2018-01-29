@@ -1,0 +1,27 @@
+
+
+<form class="form" action="/vesselcodes/{{mmsi}}?_method=PUT" method="post">
+	<div class="form-group">
+		<label for="imo">IMO</label>
+		<input value="{{imo}}" type="text" class="form-control" id="imo" placeholder="Enter imo" name="imo">
+	</div>
+	<div class=form-group>
+		<label for="mmsi">MMSI</label>
+		<input value="{{mmsi}}" type="text" class="form-control" placeholder="Enter mmsi" name="mmsi">
+	</div>
+	<div class="form-group">
+		<label for="shipname">SHIPNAME</label>
+		<input value="{{shipname}}" type="text" class="form-control" placeholder="Enter shipname" name="shipname">
+	</div>
+	<div class="form-group">
+		<label for="flag">FLAG</label>
+		<input value="{{flag}}" type="text" class="form-control" placeholder="Enter nationality" name="flag">
+	</div>
+	<div class="form-group">
+		<label for="vtype">VTYPE</label>
+		<input value="{{vtype}}" type="text" class="form-control" placeholder="Enter type of ship" name="vtype">
+	</div>
+
+	<button type="submit" class="btn btn-default btn-danger">Update</button>
+
+</form>

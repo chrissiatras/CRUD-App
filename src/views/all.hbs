@@ -1,0 +1,24 @@
+<h2>Imo Vessels</h2>
+
+<table  class="table" style="width:100%">
+	<thead>
+		<tr>
+		    <th>IMO</th>
+		    <th>MMSI</th>
+		    <th>SHIPNAME</th>
+		    <th>FLAG</th>
+		    <th>VTYPE</th>
+	  </tr>
+	</thead>
+	<tbody>
+		{{#each vessels}}
+		<a class="table-row" href="/vesselcodes/{{mmsi}}">
+			 <div class="table-cell"><tr><td>{{imo}}</td><td>{{mmsi}}</td><td>{{shipname}}</td><td>{{flag}}</td><td>{{vtype}}</td><td><a href="/vesselcodes/{{mmsi}}" class="btn btn-info" role="button">Edit</a></td></tr>
+			</div>
+		</a>
+		{{/each}}
+	</tbody>
+</table>
+
+<a type="button" class="btn btn-default btn-primary" href="/vesselcodes/new">New Vessel</a>
+
